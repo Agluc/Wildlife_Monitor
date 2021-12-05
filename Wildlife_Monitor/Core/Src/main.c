@@ -259,8 +259,8 @@ int main(void)
 	    uint8_t recMessage[Buffer[1]];
 	    readBuffer(recMessage,Buffer[1],Buffer[2]);
 	  //Print payload
-	    for(int i = 3;i<Buffer[i-1];i++)
-	    	printuint8_t(recMessage[i]);
+	    print((char*)recMessage);
+
 	    print("\n");
 	  }
 
